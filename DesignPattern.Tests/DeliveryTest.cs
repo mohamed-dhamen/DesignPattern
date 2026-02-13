@@ -10,6 +10,8 @@ public class TransportFactoryTest
     {
         ILogisticsFactory  factory = new RoadLogisticsFactory() ; 
         DeliveryInfo deliveryInfo = new DeliveryInfo(factory); 
+        deliveryInfo.ShowDeliveryInfo(); 
+        
         Assert.Equal( typeof(TruckDriver) , deliveryInfo.driver.GetType() ) ; 
         Assert.Equal(typeof(Truck), deliveryInfo.transport.GetType()); 
 
