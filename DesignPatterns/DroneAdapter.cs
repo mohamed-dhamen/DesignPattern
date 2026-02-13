@@ -8,7 +8,12 @@ public class DroneAdapter: ITransport
 
       this._superDrone = superDrone ; 
     }
-    
+
+    public double GetCost()
+    {
+        return 1000 ; 
+    }
+
     public void Transport()
     {
       _superDrone.Beep() ; 
